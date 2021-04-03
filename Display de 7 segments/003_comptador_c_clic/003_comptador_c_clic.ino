@@ -19,6 +19,7 @@ const int G = 11;
 const int buttonPin = 2; 
 int buttonState = LOW;     // variable per llegir l'estat del polsador
 int buttonPushCounter = 0;
+int temps = 500;
 
 void setup() 
 {
@@ -55,7 +56,7 @@ void loop() {
       digitalWrite(F, HIGH);
       digitalWrite(G, HIGH);
       
-      delay(500);
+      delay(temps);
     }
     
     else if (buttonPushCounter == 2 )
@@ -71,7 +72,7 @@ void loop() {
       digitalWrite(F, HIGH);
       digitalWrite(G, LOW);
       
-      delay(500);
+      delay(temps);
    }
       
     else if (buttonPushCounter == 3 ) 
@@ -87,7 +88,7 @@ void loop() {
       digitalWrite(F, HIGH);
       digitalWrite(G, LOW);
       
-      delay(500);
+      delay(temps);
   } 
 
      else if (buttonPushCounter == 4 )
@@ -103,7 +104,7 @@ void loop() {
       digitalWrite(F, LOW);
       digitalWrite(G, LOW);
       
-      delay(500);
+      delay(temps);
     
   }   
      else if (buttonPushCounter == 5 ) 
@@ -120,7 +121,7 @@ void loop() {
       digitalWrite(F, LOW);
       digitalWrite(G, LOW);
       
-      delay(500);
+      delay(temps);
     
       
   }
@@ -138,7 +139,7 @@ void loop() {
       digitalWrite(F, LOW);
       digitalWrite(G, LOW);
       
-      delay(500);
+      delay(temps);
    }
       
      else if (buttonPushCounter == 7 ) 
@@ -154,7 +155,7 @@ void loop() {
       digitalWrite(F, HIGH);
       digitalWrite(G, HIGH);
       
-      delay(500);
+      delay(temps);
    }
       
      else if (buttonPushCounter == 8 )
@@ -170,7 +171,7 @@ void loop() {
       digitalWrite(F, LOW);
       digitalWrite(G, LOW);
       
-      delay(500);
+      delay(temps);
    }
       
     else if (buttonPushCounter == 9 )
@@ -185,7 +186,7 @@ void loop() {
       digitalWrite(F, LOW);
       digitalWrite(G, LOW);
       
-      delay(500); 
+      delay(temps); 
    }
 
       else 
@@ -200,13 +201,28 @@ void loop() {
       digitalWrite(F, LOW);
       digitalWrite(G, HIGH);
       
-      delay(500);
+      delay(temps);
       
       buttonPushCounter = 0 ;
 
    }
    
  }
-    
+
+     else if (buttonPushCounter == 0)
+
+   {
+      // 0
+      digitalWrite(A, LOW);
+      digitalWrite(B, LOW);
+      digitalWrite(C, LOW);
+      digitalWrite(D, LOW);
+      digitalWrite(E, LOW);
+      digitalWrite(F, LOW);
+      digitalWrite(G, HIGH);
+      
+      delay(300); 
+   }
+
 } 
   
