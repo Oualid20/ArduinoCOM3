@@ -119,7 +119,7 @@ void loop() {
      digitalWrite(quatre, HIGH);
      digitalWrite(tres, HIGH);
      digitalWrite(dos, HIGH);
-     digitalWrite(un, HIGH);
+     digitalWrite(un, LOW);
       
       delay(temps);
    }
