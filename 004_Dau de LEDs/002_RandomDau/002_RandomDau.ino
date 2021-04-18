@@ -132,7 +132,7 @@ void loop() {
      digitalWrite(dos, LOW);
      digitalWrite(un, LOW);
      
-      delay(300); 
+     delay(300); 
    }
 
 }
